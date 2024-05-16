@@ -122,6 +122,23 @@ header .container {
     background-color: blue;
 }
 
+/* <!-- SIXTH LAYOUT , GET STARTED --> */
+
+#getstarted .container{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    /* DEBUG */
+    background-color:#9792e4 ;
+    margin-bottom: 40px;
+}
+
+#getstarted .col{
+
+    /* DEBUG */
+    background-color:#fdc15f;
+}
 
 
 
@@ -134,7 +151,22 @@ header .container {
            REGOLE FOOTER
 **************************************/
 
+#info .container{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    /* DEBUG */
+    background-color:#333333 ;
+}
 
+#info .col{
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    /* DEBUG */
+    background-color: #333333;
+}
 
 
 
@@ -194,9 +226,25 @@ header .container {
         background-color: blue;
     }
 
+    /* <!-- SIXTH LAYOUT , GET STARTED --> */
 
 
+    #getstarted .col{
+        width: 80%;
+        margin: 0 auto;
+        /* DEBUG */
+        background-color: #fdc15f;
+    }
 
+
+    /* FOOTER */
+
+    #info .col{
+        width: 70%;
+        margin: 0 auto;
+        /* DEBUG */
+        background-color: #333333;
+    }
 
 
 }
@@ -249,5 +297,25 @@ header .container {
     }
 
 
+    /* <!-- SIXTH LAYOUT , GET STARTED --> */
+
+
+    #getstarted .col{
+        width: 50%;
+        margin: 0 auto;
+        /* DEBUG */
+        background-color: #fdc15f;
+    }
+
+
+
+    /* FOOTER */
+
+    #info .col{
+        width: 50%;
+        margin: 0 auto;
+        /* DEBUG */
+        background-color: #333333;
+    }
 
 }
