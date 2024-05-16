@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* Regole Generali*/
 
 /*************************************
@@ -17,12 +23,11 @@ header{
     margin-bottom: 60px;
 }
 
-#container{
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 24px;
-    display: flex;
-    justify-content: space-between;
+header .container {
+	padding-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-self: baseline;
 }
 
 #logo{
@@ -53,19 +58,71 @@ header{
            REGOLE MAIN
 **************************************/
 
-#explanation #container{
-    min-height: 300px;
-    flex-wrap: wrap;
+/* <!-- FIRST LAYOUT , EXPLANATION --> */
+
+#explanation .container {
+	min-height: 300px;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
     /* DEBUG */
-    background-color: violet ;
+    background-color: violet;
+    margin-bottom: 40px;
 }
 
 .col{
-    min-height: 60px;
-    width: calc(100% / 3);
+    min-height: 250px;
+    width: 100%;
+    /* display: block; */
+    margin-bottom: 20px;
     /* DEBUG */
-    background-color: brown;
+    background-color: #b5ddff;
+    border: solid black 2px ;
 }
+
+/* <!-- SECOND LAYOUT , MOTIVATION --> */
+
+#motivation .container{
+    min-height: 400px;
+    /* DEBUG */
+    background-color: greenyellow;
+    margin-bottom: 40px;
+}
+
+#motivation .col{
+    /* DEBUG */
+    background-color: red;
+}
+
+/* <!-- THREAD LAYOUT , TESTIMONIALS --> */
+
+#testimonial .container{
+    min-height: 400px;
+    /* DEBUG */
+    background-color: rgb(255, 47, 224);
+    margin-bottom: 40px;
+}
+
+#testimonial .col{
+    /* DEBUG */
+    background-color: #0084fd;
+}
+
+/* <!-- FIFTH LAYOUT , ABOUT US  --> */
+
+#aboutus .container{
+    min-height: 400px;
+    /* DEBUG */
+    background-color: rgb(255, 47, 224);
+    margin-bottom: 40px;
+}
+
+#aboutus .col{
+    /* DEBUG */
+    background-color: blue;
+}
+
+
 
 
 
@@ -88,9 +145,60 @@ header{
 **************************************/
 
 @media all and (min-width:768px) {
-
-
     
+    /* <!-- FIRST LAYOUT , EXPLANATION --> */
+
+    #explanation .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #explanation .col{
+        min-height: 60px;
+        width: calc(100% / 3);
+        /* DEBUG */
+        background-color: #b5ddff;
+    }
+
+    #explanation .col.big{
+        width: calc((100% / 3) * 2 - 10px);
+    }
+
+    /* <!-- FOURTH LAYOUT , BENEFITS  --> */
+
+    #benefit .container{
+        min-height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        /* DEBUG */
+        background-color: rgb(192, 203, 38);
+        margin-bottom: 40px;
+    }
+    
+    #benefit .col{
+        width: calc(100% / 2);
+        /* DEBUG */
+        background-color: #328144;
+    }
+    
+    /* <!-- FIFTH LAYOUT , ABOUT US  --> */
+
+    #aboutus .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #aboutus .col{
+        width: calc(100% / 2);
+        /* DEBUG */
+        background-color: blue;
+    }
+
+
+
+
+
+
 }
 
 
@@ -101,7 +209,9 @@ header{
 
 @media all and (min-width:1025px) {
 
-    #container{
+    /* HEADER */
+
+    .container{
         width: 70%;
     }
 
@@ -117,5 +227,27 @@ header{
         background-color: rgb(4, 255, 0);
         border: solid black 2px;
     }
+
+    /* <!-- SECOND LAYOUT , MOTIVATION --> */
     
+    #motivation .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #motivation .col{
+        width: 45%;
+        /* DEBUG */
+        background-color: blue;
+    }
+
+    /*  <!-- FOURTH LAYOUT , BENEFITS  --> */
+
+    #benefit .container {
+        justify-content: center;
+    }
+
+
+
 }
