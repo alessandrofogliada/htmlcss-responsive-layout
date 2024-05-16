@@ -10,6 +10,15 @@
     margin: 0 auto;
 }
 
+.button {
+	color: black;
+	background-color: white;
+	border-radius: 25px;
+	height: 30px;
+	width: 90px;
+	text-align: center;
+}
+
 /* Regole Generali*/
 
 /*************************************
@@ -32,22 +41,36 @@ header .container {
 
 #logo{
     height: 50px;
-    width: 50px;
+    width: 90px;
     /* DEBUG */
-    background-color: yellow;
-    border: solid black 2px;
+    /* background-color: yellow;
+    border: solid black 2px; */
+}
+
+#logo img{
+    width: 100%;
 }
 
 #hamburger{
     height: 50px;
     width: 50px;
     /* DEBUG */
-    background-color: yellow;
-    border: solid black 2px;
+    /* background-color: yellow; */
+    /* border: solid black 2px; */
+}
+
+#hamburger i {
+	padding: 15px;
+	color: white;
 }
 
 #menu{
     display: none;
+}
+
+#menu .button{
+    color: black;
+    padding-top: 5px;
 }
 
 
@@ -73,11 +96,33 @@ header .container {
 .col{
     min-height: 250px;
     width: 100%;
+    display: flex;
     /* display: block; */
     margin-bottom: 20px;
     /* DEBUG */
     background-color: #b5ddff;
     border: solid black 2px ;
+}
+
+.container .col {
+	min-height: 250px;
+	width: 100%;
+	margin-bottom: 20px;
+    padding: 0 45px;
+	background-color: #b5ddff;
+	border: solid black 2px;
+	display: block;
+}
+
+.col h2 , 
+span ,
+a{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+.container img{
+    width: 100%;
 }
 
 /* <!-- SECOND LAYOUT , MOTIVATION --> */
@@ -260,22 +305,28 @@ header .container {
     /* HEADER */
 
     .container{
-        width: 70%;
+        width: 80%;
     }
 
     #hamburger{
         display: none;
     }
 
-    #menu{
-        display: block;
+    #menu {
         height: 50px;
-        width: 150px;
+        width: 405px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         /* DEBUG */
-        background-color: rgb(4, 255, 0);
-        border: solid black 2px;
+        /* background-color: rgb(4, 255, 0);
+        border: solid black 2px; */
     }
 
+    #menu a{
+        text-decoration: none;
+        color: white;
+    }
     /* <!-- SECOND LAYOUT , MOTIVATION --> */
     
     #motivation .container {
