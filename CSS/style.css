@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Regole Generali*/
+
+/*************************************
+           REGOLE HEADER
+**************************************/
+
+header{
+    background-color: #0084fd;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+    /* DEBUG */
+    background-color: yellow;
+    border: solid black 2px;
+}
+
+#hamburger{
+    height: 50px;
+    width: 50px;
+    /* DEBUG */
+    background-color: yellow;
+    border: solid black 2px;
+}
+
+#menu{
+    display: none;
+}
+
+
+
+
+
+/*************************************
+           REGOLE MAIN
+**************************************/
+
+#explanation #container{
+    min-height: 300px;
+    flex-wrap: wrap;
+    /* DEBUG */
+    background-color: violet ;
+}
+
+.col{
+    min-height: 60px;
+    width: calc(100% / 3);
+    /* DEBUG */
+    background-color: brown;
+}
+
+
+
+
+
+
+
+/*************************************
+           REGOLE FOOTER
+**************************************/
+
+
+
+
+
+
+
+/*************************************
+           TABLET
+**************************************/
+
+@media all and (min-width:768px) {
+
+
+    
+}
+
+
+
+/*************************************
+           DESKTOP
+**************************************/
+
+@media all and (min-width:1025px) {
+
+    #container{
+        width: 70%;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+        height: 50px;
+        width: 150px;
+        /* DEBUG */
+        background-color: rgb(4, 255, 0);
+        border: solid black 2px;
+    }
+    
+}
