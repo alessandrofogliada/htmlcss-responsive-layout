@@ -85,23 +85,22 @@ header .container {
 
 #explanation .container {
 	min-height: 300px;
+    margin-bottom: 80px;
 	flex-wrap: wrap;
 	display: flex;
 	justify-content: space-between;
     /* DEBUG */
-    background-color: violet;
-    margin-bottom: 40px;
+    /* background-color: violet;
+    margin-bottom: 40px; */
 }
 
 .col{
     min-height: 250px;
     width: 100%;
     display: flex;
-    /* display: block; */
     margin-bottom: 20px;
     /* DEBUG */
     background-color: #b5ddff;
-    border: solid black 2px ;
 }
 
 .container .col {
@@ -109,12 +108,15 @@ header .container {
 	width: 100%;
 	margin-bottom: 20px;
     padding: 0 45px;
-	background-color: #b5ddff;
-	border: solid black 2px;
-	display: block;
+	/* background-color: #b5ddff;
+	/* border: solid black 2px; */
+} 
+
+.col h2{
+    color: #0084fd;
 }
 
-.col h2 , 
+#explanation .col .big h2 , 
 span ,
 a{
     margin-top: 32px;
@@ -125,18 +127,65 @@ a{
     width: 100%;
 }
 
+#explanation .container .col{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#explanation .container .col .button {
+	background-color: #0084fd;
+	width: 180px;
+	height: 40px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+	color: white;
+	align-items: center;
+	text-decoration: none;
+}
+
+#explanation .col.big i {
+	padding-right: 10px;
+	padding-bottom: 3px;
+}
+
+.icon {
+	width: 80%;
+	height: 150px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: #0084fd;
+    /* DEBUG */
+    	/* background-color: brown; */
+}
+
+#explanation .col .icon{
+    font-size: 100px;
+}
+
+#explanation .col span{
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
 /* <!-- SECOND LAYOUT , MOTIVATION --> */
 
+#motivation {
+    background-color: #9792e4;
+}
 #motivation .container{
     min-height: 400px;
     /* DEBUG */
-    background-color: greenyellow;
-    margin-bottom: 40px;
+    /* background-color: greenyellow;
+    margin-bottom: 40px; */
 }
 
 #motivation .col{
-    /* DEBUG */
-    background-color: red;
+background-color: #9792e4;  
+  /* DEBUG */
+    /* background-color: red; */
 }
 
 /* <!-- THREAD LAYOUT , TESTIMONIALS --> */
@@ -232,14 +281,29 @@ a{
 
     #explanation .col{
         min-height: 60px;
-        width: calc(100% / 3);
+        width: calc(95% / 3);
         /* DEBUG */
         background-color: #b5ddff;
     }
 
     #explanation .col.big{
         width: calc((100% / 3) * 2 - 10px);
+        align-items: start;
     }
+
+    #explanation .col span{
+        padding: 0;
+    }
+
+    #explanation img{
+        width: 60%;
+    }
+
+    #explanation .col.big h2{
+        margin-top: 30px;
+    }
+
+
 
     /* <!-- FOURTH LAYOUT , BENEFITS  --> */
 
