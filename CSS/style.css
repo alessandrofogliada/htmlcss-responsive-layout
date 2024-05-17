@@ -100,7 +100,7 @@ header .container {
     display: flex;
     margin-bottom: 20px;
     /* DEBUG */
-    background-color: #b5ddff;
+    /* background-color: #b5ddff; */
 }
 
 .container .col {
@@ -242,14 +242,28 @@ a{
 #testimonial .container{
     min-height: 400px;
     /* DEBUG */
-    background-color: rgb(255, 47, 224);
+    background-color: #ffffff;
     margin-bottom: 40px;
 }
 
 #testimonial .col{
+    width: 100%;
+    margin: 40px auto 0;
     display: block;
     /* DEBUG */
-    background-color: #0084fd;
+    background-color: #ffffff;
+}
+
+#testimonial .col.introduction {
+	width: 77%;
+	margin: 0 auto;
+	padding: 20px 100px;
+    /* DEBUG */
+    /* background-color: thistle; */
+}
+
+#testimonial .col.introduction h3{
+    color: black;
 }
 
 #testimonial h2 , h3{
@@ -263,28 +277,87 @@ a{
 
 #card{
     min-height: 100px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+    padding: 20px 100px;
     background-color: #9792e4;
+    border-radius: 65px;
+    border: solid white 2px;
+}
+
+#card p , h3{
+    color: white;
+}
+
+#card p{
+    margin-top: 20px;
+}
+
+.roundpicture img{
+    border-radius: 50%;
+    height: 200px;
 }
 
 .roundpicture {
-	width: 50%;
+	width: 84%;
 	margin: 0 auto;
-	background-color: #328144;
 	border-radius: 25px;
-	height: 110px;
+	min-height: 100px;
+    /* DEBUG */
+    /* background-color: #328144; */
 }
+
+
+/* FOURTH LAYOUT , BENEFITS */
+
+#benefit .container{
+    background-color: #9792e4;
+}
+
+.intro {
+	width: 80%;
+	margin: 0 auto;
+	min-height: 180px;
+	text-align: center;
+	padding: 60px 0px;
+	color: white;
+	font-size: 58px;
+}
+
+ #benefit .col{
+    width: 80%;
+    min-height: 50px;
+    margin: 0 auto 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+ }
+
+ #benefit h2{
+    font-size: 80px;
+    margin-top: 20px;
+    color: #9792e4;
+ }
+
+ #benefit h3{
+    text-align: left;
+    padding-top: 0 ;
+    color: #9792e4;
+    font-size: 24px;
+ }
+
+ #benefit p{
+    padding-top: 15px;
+ }
+
+ #benefit .button{
+    background-color: #9792e4;
+    color: white;
+    text-decoration: none;
+ }
 
 
 /* <!-- FIFTH LAYOUT , ABOUT US  --> */
-
-#aboutus .container{
-    min-height: 400px;
-    /* DEBUG */
-    background-color: rgb(255, 47, 224);
-    margin-bottom: 40px;
-}
 
 #aboutus .col{
     /* DEBUG */
@@ -378,6 +451,34 @@ a{
         margin-top: 30px;
     }
 
+    /* THREAD LAYOUT , TESTIMONIALS */
+
+    #card {
+        min-height: 100px;
+        width: 95%;
+        margin: 0 auto;
+        padding: 17px 0 0 17px;
+        background-color: #9792e4;
+        border-radius: 65px;
+        border-top: 10px solid white;
+        display: flex;
+    }
+
+    #card p{
+        margin-top: 0;
+    }
+    .test{
+        padding: 10px 40px 0;
+    }
+
+    .test h3 {
+        padding-right: 283px;
+        font-size: 15px;
+    }
+
+    .roundpicture img{
+        height: 160px;
+    }
 
 
     /* <!-- FOURTH LAYOUT , BENEFITS  --> */
