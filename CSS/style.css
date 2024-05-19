@@ -104,7 +104,7 @@ header .container {
 }
 
 .container .col {
-	min-height: 250px;
+	min-height: 50px;
 	width: 100%;
 	margin-bottom: 20px;
     padding: 0 45px;
@@ -295,14 +295,12 @@ a{
 
 .roundpicture img{
     border-radius: 50%;
-    height: 200px;
 }
 
 .roundpicture {
-	width: 84%;
-	margin: 0 auto;
-	border-radius: 25px;
-	min-height: 100px;
+	max-width: 150px;
+    max-height: 150px;
+	border-radius: 50px;
     /* DEBUG */
     /* background-color: #328144; */
 }
@@ -312,6 +310,8 @@ a{
 
 #benefit .container{
     background-color: #9792e4;
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 .intro {
@@ -326,11 +326,11 @@ a{
 
  #benefit .col{
     width: 80%;
-    min-height: 50px;
+    min-height: 320px;
+    border-radius: 25px;
     margin: 0 auto 10px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    display: block;
  }
 
  #benefit h2{
@@ -350,6 +350,11 @@ a{
     padding-top: 15px;
  }
 
+ #benefit .col a{
+    margin-top: 15px;
+ }
+
+
  #benefit .button{
     background-color: #9792e4;
     color: white;
@@ -360,10 +365,33 @@ a{
 /* <!-- FIFTH LAYOUT , ABOUT US  --> */
 
 #aboutus .col{
+    display: block;
     /* DEBUG */
-    background-color: blue;
+    /* background-color: blue; */
 }
 
+#aboutus .col:first-child{
+    margin-top: 70px;
+}
+
+#aboutus h2 , h3{ 
+    color:#9792e4 ;
+    font-size: 30px;
+}
+
+#aboutus .roundpicture{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#aboutus .button {
+	background-color: #9792e4;
+	color: white;
+	width: 200px;
+	font-size: 18px;
+	align-items: center;
+	text-decoration: none;
+}
 /* <!-- SIXTH LAYOUT , GET STARTED --> */
 
 #getstarted .container{
@@ -487,16 +515,19 @@ a{
         min-height: 400px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         /* DEBUG */
-        background-color: rgb(192, 203, 38);
+        background-color: #9792e4;
         margin-bottom: 40px;
     }
     
-    #benefit .col{
-        width: calc(100% / 2);
-        /* DEBUG */
-        background-color: #328144;
+    #benefit .col {
+        width: calc(90% / 2);
+        background-color: white;
+        margin: 30px 15px 0 23px;
     }
+
+
     
     /* <!-- FIFTH LAYOUT , ABOUT US  --> */
 
@@ -509,6 +540,19 @@ a{
         width: calc(100% / 2);
         /* DEBUG */
         background-color: blue;
+    }
+
+    #aboutus .col:first-child{
+        margin-top: 0;
+    }
+    #aboutus .roundpicture {
+        max-width: 150px;
+        max-height: 130px;
+    }
+
+    #aboutus .container {
+        display: flex;
+        width: 62%;
     }
 
     /* <!-- SIXTH LAYOUT , GET STARTED --> */
@@ -604,6 +648,11 @@ a{
 
     #benefit .container {
         justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #benefit .col{
+        width: 30%;
     }
 
 
