@@ -19,6 +19,10 @@
 	text-align: center;
 }
 
+body{
+    font-family: "PT Sans", sans-serif;
+}
+
 /* Regole Generali*/
 
 /*************************************
@@ -60,6 +64,7 @@ header .container {
 }
 
 #hamburger i {
+    font-size: 30px;
 	padding: 15px;
 	color: white;
 }
@@ -90,8 +95,6 @@ header .container {
 	display: flex;
 	justify-content: space-between;
     /* DEBUG */
-    /* background-color: violet;
-    margin-bottom: 40px; */
 }
 
 .col{
@@ -100,7 +103,7 @@ header .container {
     display: flex;
     margin-bottom: 20px;
     /* DEBUG */
-    /* background-color: #b5ddff; */
+    background-color: #b5ddff;
 }
 
 .container .col {
@@ -170,6 +173,11 @@ a{
     padding: 0 20px;
 }
 
+#explanation span{
+    color: #647a8d;
+}
+
+
 /* <!-- SECOND LAYOUT , MOTIVATION --> */
 
 #motivation {
@@ -223,6 +231,12 @@ a{
     height: 40px;
 }
 
+#motivation .col.variant span{
+    color: black;
+}
+
+
+
 /* #motivation .container .col.variant a{
     margin-left: 150px;
 } */
@@ -255,15 +269,15 @@ a{
 }
 
 #testimonial .col.introduction {
-	width: 77%;
 	margin: 0 auto;
-	padding: 20px 100px;
+	/* padding: 20px 100px; */
     /* DEBUG */
     /* background-color: thistle; */
 }
 
-#testimonial .col.introduction h3{
-    color: black;
+#testimonial .col.introduction h3 {
+	color: black;
+	padding-top: 70px;
 }
 
 #testimonial h2 , h3{
@@ -275,14 +289,20 @@ a{
     color: #9792e4;
 }
 
-#card{
-    min-height: 100px;
-    width: 95%;
-    margin: 0 auto;
-    padding: 20px 100px;
-    background-color: #9792e4;
-    border-radius: 65px;
-    border: solid white 2px;
+#testimonial span {
+	color: black;
+	padding-bottom: 30px;
+}
+
+#card {
+	min-height: 300px;
+	width: 95%;
+	margin: 0 auto;
+	background-color: #9792e4;
+	border-radius: 65px;
+	border: solid white 2px;
+	font-size: 20px;
+	text-align: center;
 }
 
 #card p , h3{
@@ -298,11 +318,16 @@ a{
 }
 
 .roundpicture {
-	max-width: 150px;
-    max-height: 150px;
+	max-width: 200px;
+	max-height: 200px;
 	border-radius: 50px;
+	margin: 27px auto 0;
     /* DEBUG */
-    /* background-color: #328144; */
+	/* background-color: #328144; */
+}
+
+#testimonial .container img{
+    width: 100%;
 }
 
 
@@ -326,7 +351,7 @@ a{
 
  #benefit .col{
     width: 80%;
-    min-height: 320px;
+    min-height: 350px;
     border-radius: 25px;
     margin: 0 auto 10px;
     background-color: white;
@@ -366,8 +391,7 @@ a{
 
 #aboutus .col{
     display: block;
-    /* DEBUG */
-    /* background-color: blue; */
+    background-color: white;
 }
 
 #aboutus .col:first-child{
@@ -382,6 +406,7 @@ a{
 #aboutus .roundpicture{
     max-width: 200px;
     max-height: 200px;
+    position: relative;
 }
 
 #aboutus .button {
@@ -397,18 +422,27 @@ a{
     padding-right: 9px;
     padding-bottom: 5px;
 }
+
+#aboutus .roundpicture i{
+        position: absolute;
+        right: 0;
+        font-size: 50px;
+        color: #9792e4;
+}
+
 /* <!-- SIXTH LAYOUT , GET STARTED --> */
 
 #getstarted .container{
     width: 100%;
     min-height: 400px;
     /* DEBUG */
-    background-color:#9792e4 ;
+    /* background-color:#9792e4 ; */
     margin-bottom: 40px;
 }
 
 #getstarted .col{
     display: block;
+    background-color: #9792e4;
     /* DEBUG */
     /* background-color:#fdc15f; */
 }
@@ -585,6 +619,7 @@ a{
         /* DEBUG */
         /* background-color: blue; */
     }
+
 
     #aboutus .col:first-child{
         margin-top: 0;
